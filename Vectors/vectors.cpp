@@ -13,7 +13,9 @@ int main()
     strings.push_back("two");
     strings.push_back("three");
 
+
     for(vector<string>::iterator it = strings.begin(); it != strings.end(); it++){
+    	//C++11 vector<string>::iterator = auto yapýlabilir
         cout << *it << endl;
     }
     vector<string>::iterator it = strings.begin();
