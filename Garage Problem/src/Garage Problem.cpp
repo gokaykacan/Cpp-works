@@ -1,6 +1,6 @@
 //============================================================================
 // Name        : Garage.cpp
-// Author      : 
+// Author      : Gokay Kacan
 // Version     :
 // Copyright   : Your copyright notice
 // Description : Hello World in C++, Ansi-style
@@ -13,9 +13,9 @@ using namespace std;
 
 class Garage{
 private:
-	bool dolu;
+	static bool dolu ; //static deðiþken ile garajýn doluluðunu kontrol ediyoruz ki diðer objeler de doluluðunu görsün
 public:
-	Garage():dolu(0){
+	Garage() {
 
 	}
 	bool isDolu(){
@@ -25,7 +25,7 @@ public:
 	bool parkEt(){
 		bool res =true;
 
-		if(this->dolu){
+		if(dolu){
 			cout << "Garaj Dolu, Park Yapýlmaz !" << endl;
 			res = false;
 		}
@@ -38,8 +38,8 @@ public:
 	}
 	bool parktanAl(){
 		bool res = true;
-		if(this->dolu){
-			this->dolu = 0;
+		if(dolu){
+			dolu = 0;
 			cout << "Araç Garajdan Alýndý" << endl;
 		}
 		else{
@@ -49,7 +49,6 @@ public:
 		return res;
 	}
 	virtual ~Garage(){
-		this->dolu = 0;
 	}
 
 };
@@ -88,6 +87,9 @@ public:
 		return tekerlek;
 	}
 };
+
+bool Garage::dolu(0); //static deðiþkeni initialize etme
+
 int main() {
 
 	Araba ar;
@@ -110,7 +112,7 @@ int main() {
 	//Garajý Boþalt
 	//gar1->parktanAl();
 
-	cout << "Garaj þu an dolu mu: " << gar1->isDolu() << endl;
+	cout << "Garaj þu an dolu mu: " << gar2->isDolu() << endl;
 
 	gar2->parkEt();
 
