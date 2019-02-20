@@ -23,22 +23,27 @@ int CharShiftTime(char* str1, char* str2){
 		return n;
 	}
 
+	if(*str1 == *str2)//if they are equal, return 0 immediately
+		return 0;
+
 	for(unsigned int i=1; i<size1; i++){
 		if(str1[0] == str2[i]){
-			for(unsigned int j=0; j<size2; j++){
-				if((i+j) < size1){
-					if(str1[j] == str2[j+i])
-						flag = 1;
-					else
-						flag =0;
+				for(unsigned int j=0; j<size2; j++){
+					if((i+j) < size1){
+						if(str1[j] == str2[j+i])
+							flag = 1;
+						else
+							flag =0;
+					}
+					else{
+						if(str1[j] == str2[(j+i)-size1])
+							flag = 1;
+						else
+							flag = 0;
+					}
+					if(!flag) // if one element are not equal, increment shift time
+						i=i+1;
 				}
-				else{
-					if(str1[j] == str2[(j+i)-size1])
-						flag = 1;
-					else
-						flag = 0;
-				}
-			}
 			if(flag){
 				n = i;
 				break;
