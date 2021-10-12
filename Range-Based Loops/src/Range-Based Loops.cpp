@@ -16,13 +16,14 @@ int main() {
 	V.push_back("four");
 
 	for(auto text: V){
-		cout << text << endl;
+		cout << text << " ";
 	}
 
-	string value = "Hello";
+	cout << endl;
+	string value = "Hello World";
 
 	for(auto text: value){
-		cout << text << endl;
+		cout << text << " ";
 	}
 	return 0;
 }

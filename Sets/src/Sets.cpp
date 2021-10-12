@@ -42,12 +42,12 @@ int main() {
 	numbers.insert(30); // bir kez eklendiği için tekrar eklemez
 	numbers.insert(60);
 
-	// ordered şekilde yazar
+	// ordered sekilde yazar
 	for(set<int>::iterator it = numbers.begin(); it != numbers.end(); it++){
 		cout << *it << endl;
 	}
 
-	//bir elemanı buldurma
+	//bir elemani buldurma
 	set<int>::iterator itFinds = numbers.find(30);
 	if(itFinds != numbers.end())
 		cout << "Found: "<< *itFinds << endl;

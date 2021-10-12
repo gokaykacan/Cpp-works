@@ -32,11 +32,14 @@ int main() {
 		cout << it->first << ": " << it->second << endl;
 	}
 	cout << endl;
+	//ages["Ahmet"] = 88;
+
 	for(map<string, int>::iterator it=ages.begin(); it != ages.end(); it++){
 		pair<string, int> age = *it;
 
 		cout << age.first << ": " << age.second << endl;
 	}
+
 
 	return 0;
 }

@@ -31,7 +31,7 @@ int main() {
 	func("Mike");
 	test(func);
 
-	auto divide = [](auto n, auto m) -> double // fonksiyon double mý int mi dönecek karar veremiyor aþaðýda, bu sebeple return type koyduk
+	auto divide = [](auto n, auto m) -> double // fonksiyon double mi int mi dönecek karar veremiyor aþaðýda, bu sebeple return type koyduk
 	{
 		if( m == 0)
 		{

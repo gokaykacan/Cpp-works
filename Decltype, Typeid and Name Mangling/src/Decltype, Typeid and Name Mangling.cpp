@@ -20,5 +20,7 @@ int main() {
 
 	cout << name << endl;
 
+	cout << typeid(name).name() << endl; // tipini dönen fonk
+
 	return 0;
 }

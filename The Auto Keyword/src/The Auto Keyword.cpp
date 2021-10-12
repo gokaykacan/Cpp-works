@@ -27,7 +27,7 @@ auto test3() -> decltype(get()){ // return tipini decltype ile yazabiliriz
 }
 int main() {
 
-	cout << test2(6,5) << endl;
+	cout << test2(6.1,5) << endl;
 	cout << test3() << endl;
 	return 0;
 }
