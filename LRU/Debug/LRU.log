@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (LRU.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  LRU.cpp
+C:\Users\Gökay\Desktop\Cpp-works\LRU\LRU.cpp(66): warning C4715: 'LinkedList::getLastElement': not all control paths return a value
+C:\Users\Gökay\Desktop\Cpp-works\LRU\LRU.cpp(71): warning C4715: 'LinkedList::getFirstElement': not all control paths return a value
+  LRU.vcxproj -> C:\Users\Gökay\Desktop\Cpp-works\LRU\Debug\LRU_WithLinkedList.exe
