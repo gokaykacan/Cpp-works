@@ -177,6 +177,8 @@ int main()
 	myCache->addElementToTheCache(5);
 	myCache->displayCache();
 	cout << "Element[1] Exist: " << myCache->checkElementInCache(1) << endl;
+	
+	delete myCache;
 
 	return 0;
 }
