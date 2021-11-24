@@ -83,5 +83,8 @@ int main()
 	cout << "Element 4 Exits: " << myCache->checkElementExistInCache(4) << endl;;
 
 	myCache->displayCache();
+	
+	delete myCache;
+	
 	return 0;
 }

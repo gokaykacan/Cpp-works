@@ -127,6 +127,7 @@ int main()
 	for (auto x : bT->postOrderTraversal())
 		cout  << x << " ";
 	cout << endl;
-
+	
+	delete bT;
 		return 0;
 }
